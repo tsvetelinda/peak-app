@@ -26,7 +26,21 @@ const mountainSchema = new mongoose.Schema({
         length: {
             type: Number
         }
-    }]
+    }],
+    restaurants: [{
+        restaurantName: {
+            type: String
+        },
+        cuisineType: {
+            type: String
+        }, 
+        nearestSlope: {
+            type: String
+        }, 
+        googleMapsLink: {
+            type: String
+        }
+    }],
 });
 
 module.exports = mongoose.model('Mountain', mountainSchema);
