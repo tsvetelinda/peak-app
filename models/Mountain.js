@@ -9,6 +9,10 @@ const mountainSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    nameEnglish: {
+        type: String,
+        required: true
+    },
     description: {
         type: String,
         required: true
